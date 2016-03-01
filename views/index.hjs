@@ -48,7 +48,7 @@
           </div>
 
           <div class="ui-block-b">
-            <a href="#" class="ui-btn ui-corner-all ui-shadow">Automotive</a><br>
+            <a href="/automotive" rel="external" class="ui-btn ui-corner-all ui-shadow">Automotive</a><br>
           </div>
         </div>
 

@@ -15,7 +15,7 @@ router.get('/restaurant', function(req, res, next) {
   res.render('restaurant', { title: 'restaurant' });
 });
 
-
-
-
+router.get('/automotive', function(req, res, next) {
+  res.render('automotive', { title: 'automotive' });
+});
 module.exports = router;

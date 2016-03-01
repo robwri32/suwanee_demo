@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/rlw.css" />
+  <link rel="stylesheet" href="stylesheets/jquery.mobile.icons.min.css" />
+</head>
+
+<body>
+  <div data-role="page">
+
+    <div data-role="panel" id="mypanel">
+      <ul data-role="listview">
+        <li><a href="/" data-transition="pop">Home</a></li>
+      <li><a href="#">About this App</a></li>
+      <li><a href="#">Check In</a></li>
+      <li><a href="#">Call Us</a></li>
+      <li><a href="#">More</a></li>
+      </ul>
+    </div><!-- /panel -->
+
+  	<div data-role="header">
+  		<h1>Suwanee Mag Demo App</h1>
+
+<a href="#mypanel">Menu</a>
+  	</div><!-- /header -->
+
+  	<div role="main" class="ui-content">
+      <div id="map"></div>
+
+
+  	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="/" data-icon="info" data-transition="pop">Categories</a>
+                </li>
+                <li><a href="/map" rel="external" data-icon="mail" data-transition="pop" >Map</a>
+                </li>
+                <li><a href="#" data-icon="bars">Advertise</a>
+                </li>
+                <li><a href="tel:8433332615" data-icon="bars">Call Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+  </div><!-- /page -->
+
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+<script>
+// This example requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+var map;
+var infowindow;
+
+function initMap() {
+  var pyrmont = {lat: 34.051490, lng:-84.071300 };
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: pyrmont,
+    zoom: 14
+  });
+
+  infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+  service.nearbySearch({
+    location: {lat: 34.051490, lng:-84.071300 },
+    radius: 1000,
+    type: ['car_repair']
+  }, callback);
+}
+
+function callback(results, status) {
+  if (status === google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+    }
+  }
+}
+
+function createMarker(place) {
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
+}
+
+</script>
+
+
+
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLwN1UWKd0D2o4J3Ye2_ypMTvDxUvQVlw&callback=initMap&libraries=places">
+      </script>
+</body>
+
+</html>

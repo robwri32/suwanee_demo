@@ -7,5 +7,5 @@ html,body{
 background-size:cover;}
 #map {
         height: 450px;
-        width: 345px;
+        width: 100%;
       }
