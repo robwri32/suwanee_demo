@@ -1,0 +1,11 @@
+body * {
+  /* border: 1px solid lime; */
+}
+
+html,body{
+    height: 100%; background-image: url("../images/app_bg.jpg"); background-repeat: no-repeat; background-position: center center;
+background-size:cover;}
+#map {
+        height: 450px;
+        width: 345px;
+      }

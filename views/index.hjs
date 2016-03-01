@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/rlw.css" />
+  <link rel="stylesheet" href="stylesheets/jquery.mobile.icons.min.css" />
+</head>
+
+<body>
+  <div data-role="page">
+
+    <div data-role="panel" id="mypanel">
+      <ul data-role="listview">
+      <li><a href="/" data-transition="pop">Home</a></li>
+      <li><a href="#">About this App</a></li>
+      <li><a href="#">Check In</a></li>
+      <li><a href="#">Call Us</a></li>
+      <li><a href="#">More</a></li>
+      </ul>
+    </div><!-- /panel -->
+
+  	<div data-role="header">
+  		<h1>Suwanee Mag Demo App</h1>
+
+<a href="#mypanel">Menu</a>
+  	</div><!-- /header -->
+
+  	<div role="main" class="ui-content">
+      <div data-role="main" class="ui-content">
+        <p>Grid Layout for easy access to categories</p>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="/restaurant" rel="external" class="ui-btn ui-corner-all ui-shadow">Resturants</a><br>
+          </div>
+
+          <div class="ui-block-b">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow">Automotive</a><br>
+          </div>
+        </div>
+
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow">Shopping</a><br>
+          </div>
+
+          <div class="ui-block-b">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow">Pets</a><br>
+          </div>
+        </div>
+
+
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow">Education</a><br>
+          </div>
+
+          <div class="ui-block-b">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow">Marketing</a><br>
+          </div>
+        </div>
+
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow">Add Business </a><br>
+          </div>
+
+          <div class="ui-block-b">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow">Around Me</a><br>
+          </div>
+        </div>
+
+        <form>
+    <label for="flip-checkbox-1">Geo-Location:</label>
+    <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+</form>
+
+      </div>
+
+      <p>Area For Featured Business</p>
+
+  	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active" data-icon="info">Categories</a>
+                </li>
+                <li><a href="/map" data-icon="mail"  rel="external" data-transition="pop" >Map</a>
+                </li>
+                <li><a href="#" data-icon="bars">Advertise</a>
+                </li>
+                <li><a href="tel:8433332614" data-icon="bars">Call Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+  </div><!-- /page -->
+
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+      <script>
+      $( document ).on( "mobileinit", function() {
+  $.mobile.loader.prototype.options.text = "loading";
+  $.mobile.loader.prototype.options.textVisible = false;
+  $.mobile.loader.prototype.options.theme = "a";
+  $.mobile.loader.prototype.options.html = "";
+});
+      </script>
+</body>
+
+</html>
