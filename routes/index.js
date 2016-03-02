@@ -18,4 +18,8 @@ router.get('/restaurant', function(req, res, next) {
 router.get('/automotive', function(req, res, next) {
   res.render('automotive', { title: 'automotive' });
 });
+
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'contact' });
+});
 module.exports = router;

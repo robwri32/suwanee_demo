@@ -9,3 +9,27 @@ background-size:cover;}
         height: 450px;
         width: 100%;
       }
+.icon
+{
+    height:100px;
+    width:100px;
+    background-color:#bbb;
+    position:relative;
+    
+}
+.count
+{
+    position:absolute;
+    top:0px;
+    right:-10px;
+    background-color:#f00;
+    width:20px;
+    height:20px;
+    color:#fff;
+    border-radius:20px
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    text-align:center;
+    border:2px solid #fff;
+    
+}

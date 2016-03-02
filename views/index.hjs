@@ -44,7 +44,11 @@
         <p>Grid Layout for easy access to categories</p>
         <div class="ui-grid-a">
           <div class="ui-block-a">
-            <a href="/restaurant" rel="external" class="ui-btn ui-corner-all ui-shadow">Resturants</a><br>
+            
+            <a href="/restaurant" rel="external" class="ui-btn ui-corner-all ui-shadow">Resturants</a>
+                <span class="icon">
+                  <div class="count">3</div>
+              </span>
           </div>
 
           <div class="ui-block-b">
@@ -101,7 +105,7 @@
                 </li>
                 <li><a href="/map" data-icon="mail"  rel="external" data-transition="pop" >Map</a>
                 </li>
-                <li><a href="#" data-icon="bars">Advertise</a>
+                <li><a href="/contact" data-icon="bars">Advertise</a>
                 </li>
                 <li><a href="tel:8433332614" data-icon="bars">Call Us</a>
                 </li>
