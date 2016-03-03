@@ -41,13 +41,13 @@
 
   	<div role="main" class="ui-content">
       <h1> Contact us Today!</h1>
-      
+
       <label for="text-basic">Name:</label>
       <input type="text" name="text-basic" id="text-basic" value="">
-      
+
       <label for="text-basic">Email:</label>
       <input type="text" name="text-basic" id="text-basic" value="">
-      
+
       <fieldset data-role="controlgroup">
           <legend>Topic:</legend>
           <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
@@ -61,7 +61,7 @@
       </fieldset>
 
 <label for="textarea">Textarea:</label>
-<textarea cols="20" rows="80" name="textarea" id="textarea"></textarea>
+<textarea cols="20" rows="80" name="textarea" id="contact_box"></textarea>
 
 <a href="#" class="ui-shadow ui-btn ui-corner-all">Submit</a>
 
@@ -92,7 +92,7 @@
 
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-     
+
 </body>
 
 </html>

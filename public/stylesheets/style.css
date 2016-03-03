@@ -15,13 +15,13 @@ background-size:cover;}
     width:100px;
     background-color:#bbb;
     position:relative;
-    
+
 }
 .count
 {
     position:absolute;
-    top:0px;
-    right:-10px;
+    top:-44px;
+    right:-33px;
     background-color:#f00;
     width:20px;
     height:20px;
@@ -31,5 +31,6 @@ background-size:cover;}
     -webkit-border-radius:20px;
     text-align:center;
     border:2px solid #fff;
-    
+
 }
+#contact_box {height:140px !important; }

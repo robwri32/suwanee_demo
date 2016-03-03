@@ -44,15 +44,18 @@
         <p>Grid Layout for easy access to categories</p>
         <div class="ui-grid-a">
           <div class="ui-block-a">
-            
+
             <a href="/restaurant" rel="external" class="ui-btn ui-corner-all ui-shadow">Resturants</a>
                 <span class="icon">
-                  <div class="count">3</div>
+                  <div class="count">32</div>
               </span>
           </div>
 
           <div class="ui-block-b">
             <a href="/automotive" rel="external" class="ui-btn ui-corner-all ui-shadow">Automotive</a><br>
+            <span class="icon">
+              
+          </span>
           </div>
         </div>
 
