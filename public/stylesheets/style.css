@@ -3,34 +3,14 @@ body * {
 }
 
 html,body{
-    height: 100%; background-image: url("../images/app_bg.jpg"); background-repeat: no-repeat; background-position: center center;
+    height: 100%; background-image: url("../images/app_bg.png"); background-repeat: no-repeat; background-position: center center;
 background-size:cover;}
-#map {
-        height: 450px;
-        width: 100%;
-      }
-.icon
-{
-    height:100px;
-    width:100px;
-    background-color:#bbb;
-    position:relative;
-
-}
-.count
-{
-    position:absolute;
-    top:-44px;
-    right:-33px;
-    background-color:#f00;
-    width:20px;
-    height:20px;
-    color:#fff;
-    border-radius:20px
-    -moz-border-radius:20px;
-    -webkit-border-radius:20px;
-    text-align:center;
-    border:2px solid #fff;
-
-}
+#map {height: 450px;width: 100%; }
+.icon{height:100px; width:100px;background-color:#bbb;position:relative;}
+.count{position:absolute;top:-44px;right:-33px;background-color:#f00;width:20px;height:20px; color:#fff;border-radius:20px; -moz-border-radius:20px;  -webkit-border-radius:20px; text-align:center;
+border:2px solid #fff;}
 #contact_box {height:140px !important; }
+#logo {width:130px; margin-top:5px; margin-left:auto; margin-right:auto;}
+.ui-content {height: 100%; background-image: url("../images/app_bg.png"); background-repeat: no-repeat; background-position: center center;
+background-size:cover;}
+#ad  {margin-left:-20px;}

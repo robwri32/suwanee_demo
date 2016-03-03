@@ -25,21 +25,29 @@
 
     <div data-role="panel" id="mypanel">
       <ul data-role="listview">
-        <li><a href="/" data-transition="pop">Home</a></li>
+      <li><a href="/" data-transition="pop" rel="external">Home</a></li>
+      <li><a href="/restaurant" data-transition="pop" rel="external">Restaurants</a></li>
+      <li><a href="/automotive" data-transition="pop" rel="external">Automotive</a></li>
+      <li><a href="#">Shopping</a></li>
+      <li><a href="#">Pets</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Add Business</a></li>
+      <li><a href="#">Around Me</a></li>
       <li><a href="#">About this App</a></li>
-      <li><a href="#">Check In</a></li>
-      <li><a href="#">Call Us</a></li>
-      <li><a href="#">More</a></li>
       </ul>
     </div><!-- /panel -->
 
   	<div data-role="header">
-  		<h1>Suwanee Mag Demo App</h1>
+  		<div id ="logo"><a href="/"><img src="images/logo.png" alt="MDN"></a></div>
 
 <a href="#mypanel">Menu</a>
   	</div><!-- /header -->
 
   	<div role="main" class="ui-content">
+      <div id="ad"><img src="/images/tuneup_ad.png"></div>
+
+
+
       <div id="map"></div>
 
 

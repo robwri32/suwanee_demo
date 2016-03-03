@@ -34,7 +34,7 @@
     </div><!-- /panel -->
 
   	<div data-role="header">
-  		<h1>Suwanee Mag Demo App</h1>
+  		<div id ="logo"><a href="/"><img src="images/logo.png" alt="MDN"></a></div>
 
 <a href="#mypanel">Menu</a>
   	</div><!-- /header -->
