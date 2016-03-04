@@ -22,4 +22,8 @@ router.get('/automotive', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'contact' });
 });
+
+router.get('/single', function(req, res, next) {
+  res.render('single', { title: 'single' });
+});
 module.exports = router;

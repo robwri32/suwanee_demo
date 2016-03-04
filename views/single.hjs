@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/rlw.css" />
+  <link rel="stylesheet" href="stylesheets/jquery.mobile.icons.min.css" />
+</head>
+
+<body>
+  <div data-role="page">
+
+    <div data-role="panel" id="mypanel">
+      <ul data-role="listview">
+      <li><a href="/" data-transition="pop">Home</a></li>
+      <li><a href="/restaurant"data-transition="pop" rel="external" >Restaurants</a></li>
+      <li><a href="/automotive" data-transition="pop" rel="external">Automotive</a></li>
+      <li><a href="#">Shopping</a></li>
+      <li><a href="#">Pets</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Add Business</a></li>
+      <li><a href="#">Around Me</a></li>
+      <li><a href="#">About this App</a></li>
+      </ul>
+    </div><!-- /panel -->
+
+  	<div data-role="header">
+  		<div id ="logo">
+      <a href="/"><img src="images/logo.png" alt="MDN"></a>
+      </div>
+
+<a href="#mypanel">Menu</a>
+  	</div><!-- /header -->
+
+  	<div role="main" class="ui-content">
+      <div data-role="main" class="">
+        <h1> Start Single Layout </h1>
+
+
+
+      </div>
+
+      <p>Area For Featured Business</p>
+
+  	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active" data-icon="info">Categories</a>
+                </li>
+                <li><a href="/map" data-icon="mail"  rel="external" data-transition="pop" >Map</a>
+                </li>
+                <li><a href="/contact" data-icon="bars">Advertise</a>
+                </li>
+                <li><a href="tel:8433332614" data-icon="bars">Call Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+  </div><!-- /page -->
+
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+      <script>
+      $( document ).on( "mobileinit", function() {
+  $.mobile.loader.prototype.options.text = "loading";
+  $.mobile.loader.prototype.options.textVisible = false;
+  $.mobile.loader.prototype.options.theme = "a";
+  $.mobile.loader.prototype.options.html = "";
+});
+      </script>
+</body>
+
+</html>
